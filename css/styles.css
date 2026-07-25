@@ -4,3 +4,14 @@
 body {
   font-family: "Roboto Slab", serif;
 }
+
+h1, h2, h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8A0E0E;
+}
+
+p {
+  font-size: 1rem;
+  color: #4A0707;
+}
