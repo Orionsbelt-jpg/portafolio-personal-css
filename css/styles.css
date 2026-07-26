@@ -1,17 +1,90 @@
 /* Roboto slab font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
+/* aquí agregué un estilo a la nav y utilicé margin y padding para que cubriera todo el header y no se viera tan pequeño
+solo no sé si es correcto usarlo así, pero me gustó el resultado */
+header {
+  background-color: #830C0C;
+  padding: 10px;
+  margin: -10px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* estilo de la fuente de letra para la página */
 body {
   font-family: "Roboto Slab", serif;
+  background-color: #090B0A;
 }
+/* Adicion de fondo a la pagina para que tuviera mayor vida y no se viera tan vacía con los colores oscuros */
+.texto-con-fondo {
+   height: 100vh;
+   background: url("../images/trazadosnegros.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   }
 
-h1, h2, h3 {
+/* estilo de las citas textuales */
+.cita-textual {
+  font-style: italic;
+  text-decoration: underline;
+  padding: 1rem;
+  margin: 1rem;
+}
+/* estilo de los titulos */
+h1{
   font-size: 2.5rem;
   font-weight: 700;
-  color: #8A0E0E;
+  color: #E0FBFC;
+}
+/* estilo de los subtitulos */
+h2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #E0FBFC;
+}
+/* estilo de los parrafos */
+p {
+  font-size: 1.25rem;
+  color: #DAFAFB;
+}
+/* listas de los proyectos y contacto */
+li {
+  font-size: 1rem;
+  color: #DAFAFB;
+}
+/* Quería experimentar e implementar un acento a la página sin necesidad de usar imagenes o alargar la pagina. 
+Fue interesante experimentar con la pagina MDN para aprender a usar la propiedad inline-size y me gustó el resultado. */
+.botones-proyectos {
+  text-align: center;
+  border: 4px solid #DAFAFB;
+  border-radius: 15px;
+  background-color: #FF495C;
+  margin: 1rem;
+  inline-size: fit-content;
+  padding: 0.2rem;
+}
+/* estilo de los captions de las imagenes */
+figcaption {
+  font-size: 0.8rem;
+  color: #DAFAFB;
+  font-style: italic;
 }
 
-p {
-  font-size: 1rem;
-  color: #4A0707;
+/* Aplicando herencia en los estilos de la navbar */
+.nav-li {
+  list-style: none;
+}
+
+.nav-li a {
+  text-decoration: underline;
+  color: #DAFAFB;
+}
+
+/* estilo del footer */
+.p-footer {
+  font-size: 0.8rem;
+  color: #DAFAFB;
+  text-align: center;
+  margin-top: 15rem;
 }
