@@ -3,10 +3,16 @@
 
 /* aquí agregué un estilo a la nav y utilicé margin y padding para que cubriera todo el header y no se viera tan pequeño
 solo no sé si es correcto usarlo así, pero me gustó el resultado */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background-color: #830C0C;
   padding: 10px;
-  margin: -10px;
   border-radius: 5px;
   text-align: center;
 }
