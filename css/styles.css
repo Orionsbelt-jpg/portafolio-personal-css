@@ -29,23 +29,28 @@ header {
   text-decoration: underline;
   color: #DAFAFB;
 }
-/* estilo de la fuente de letra para la página */
-body {
-  font-family: "Roboto Slab", serif;
-  background-color: #090B0A;
+/* estilo de la fuente de letra para la página */ /* Adicion de fondo a la pagina para que tuviera mayor vida y no se viera tan vacía con los colores oscuros */
+html, body {
+  height: 100%;
+  margin: 0;
 }
-/* Adicion de fondo a la pagina para que tuviera mayor vida y no se viera tan vacía con los colores oscuros */
 
-.texto-con-fondo {
+body {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
+   min-height: 100%;
    background: url("../images/trazadosnegros.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   }
+   font-family: "Roboto Slab", serif;
+   background-color: #090B0A;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
 
 /* estilo de las citas textuales */
 .cita-textual {
@@ -79,15 +84,16 @@ Fue interesante experimentar con la pagina MDN para aprender a usar la propiedad
 .cards {
   display:flex;
   flex-direction: column;
+  align-items: start;
   gap: 1rem;
   margin: 1rem
 }
 
 .card{
   display: flex;
-  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  margin: 1rem;
   border: 1px solid #DAFAFB;
   border-radius: 0.5rem;
   inline-size: 20rem;
@@ -107,5 +113,4 @@ figcaption {
   justify-content: center;
   font-size: 0.8rem;
   color: #DAFAFB;
-  margin-top: 15rem;
 }
