@@ -59,6 +59,13 @@ main {
   padding: 2rem;
 }
 
+.inicio-texto, .servicios-texto, .biografia-texto, .contacto-texto  {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 20px;
+}
+
 /* estilo de las citas textuales */
 .cita-textual {
   font-style: italic;
