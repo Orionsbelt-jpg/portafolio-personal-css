@@ -93,11 +93,41 @@ main {
   grid-area: featured;
 }
 
-.inicio-texto, .servicios-texto, .biografia-texto, .contacto-texto  {
+.inicio-texto, .servicios-texto, .contacto-texto  {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 20px;
+}
+
+.biografia-container {
+  height: 30rem;
+  display:flex;
+  border: 0.2rem solid #830C0C;
+  background:#090B0A
+}
+
+.biografia-view {
+  width: 15rem;
+  display:flex;
+  flex-direction: column;
+  border-right: 0.2rem solid #830C0C;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.biografia-texto {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.biografia-foto {
+  height: 16rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* estilo de las citas textuales */
@@ -176,4 +206,9 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   color: #DAFAFB;
+}
+
+.picture {
+  width: 14rem;
+  height: 12rem;
 }
