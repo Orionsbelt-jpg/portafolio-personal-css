@@ -112,7 +112,7 @@ me gustó mucho el resultado y decidí implementarlo en mi portafolio.
 https://underground.kimu.moe/about */
 
 .biografia-container {
-  height: 30rem;
+  min-height: 30rem;
   display:flex;
   border: 0.2rem solid #830C0C;
   background:#090B0A
@@ -125,6 +125,7 @@ https://underground.kimu.moe/about */
   border-right: 0.2rem solid #830C0C;
   gap: 20px;
   padding: 1rem;
+  flex: 0 0 auto;
 }
 
 .biografia-info {
@@ -146,12 +147,19 @@ https://underground.kimu.moe/about */
 }
 
 .biografia-texto {
+  min-width: 0;
   display: flex;
-  height: 100%;
   width: 100%;
+  height: auto;
+  box-sizing: border-box;
   flex-direction: column;
   row-gap: 1rem;
   padding: 1.5rem;
+}
+
+.biografia-texto .parrafo {      
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .picture {
   width: 14rem;
