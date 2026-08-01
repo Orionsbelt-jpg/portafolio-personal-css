@@ -71,7 +71,6 @@ body {
   }
 }
 
-
 @media(min-width: 1024px) {
   .grid-layout {
     grid-template-columns: 1fr;
@@ -90,6 +89,7 @@ main {
 }
 
 .featured {
+  padding: 1rem;
   grid-area: featured;
 }
 
@@ -99,6 +99,17 @@ main {
   gap: 1.5rem;
   padding: 20px;
 }
+/* estilo de los contenedores de las tarjetas de index.html implementando display: grid */
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px
+}
+/* Estilos de la seccion de biografia, Me basé de un proyecto que vi de una youtuber para hacer la sección de biografia,
+con la excusa de meter mayor contenido e implementar mayores funciones a la página, con ciertos bugs todavia que solucionar...
+me gustó mucho el resultado y decidí implementarlo en mi portafolio. 
+https://underground.kimu.moe/about */
 
 .biografia-container {
   height: 30rem;
@@ -116,19 +127,37 @@ main {
   padding: 1rem;
 }
 
-.biografia-texto {
-  height: 100%;
-  width: 100%;
+.biografia-info {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
-  padding: 1.5rem;
+}
+
+.parrafo {
+  font-size: 1.15rem;
+}
+.biografia-separador {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
 }
 .biografia-foto {
   height: 16rem;
   display: flex;
   justify-content: center;
 }
+
+.biografia-texto {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1.5rem;
+}
+.picture {
+  width: 14rem;
+  height: 12rem;
+}
+/* ///////// /*
 
 /* estilo de las citas textuales */
 .cita-textual {
@@ -157,10 +186,8 @@ li {
   font-size: 1rem;
   color: #DAFAFB;
 }
-/* Quería experimentar e implementar un acento a la página sin necesidad de usar imagenes o alargar la pagina. 
-Fue interesante experimentar con la pagina MDN para aprender a usar la propiedad inline-size y me gustó el resultado. */
 
-
+/* estilo de las tarjetas de los proyectos */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -169,11 +196,8 @@ Fue interesante experimentar con la pagina MDN para aprender a usar la propiedad
   padding: 2rem;
   list-style: none;
 }
-.container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px
-}
+
+/* estilo de las tarjetas */
 .card {
   display: flex;
   gap: 1rem;
@@ -206,9 +230,4 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   color: #DAFAFB;
-}
-
-.picture {
-  width: 14rem;
-  height: 12rem;
 }
