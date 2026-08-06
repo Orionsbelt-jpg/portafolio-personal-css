@@ -4,6 +4,7 @@
 /* aquí agregué un estilo a la nav y utilicé margin y padding para que cubriera todo el header y no se viera tan pequeño
 solo no sé si es correcto usarlo así, pero me gustó el resultado */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ header {
   padding: 20px;
   background-color: #830C0C;
 }
+
 
 /* Aplicando herencia en los estilos de la navbar */
 
@@ -53,8 +55,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas:
   "header"  
-  "sidebar"
   "featured"
+  "sidebar"
   "footer" ;
   color:#DAFAFB;
 }
@@ -66,7 +68,7 @@ body {
   grid-template-areas: 
   "header header" 
   "featured featured"
-  "sidebar main"
+  "sidebar sidebar"
   "footer footer" ;
   }
 }
@@ -76,7 +78,8 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: 
   "header header"  
-  "sidebar featured"
+  "featured featured"
+  "sidebar sidebar"
   "footer footer" ;
   }
 }
@@ -180,7 +183,7 @@ https://underground.kimu.moe/about */
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
-.card {
+.card-link {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -254,6 +257,18 @@ li {
   padding: 20px;
   gap: 1rem;
 }
+
+.menu-panel{
+  width: 280px;
+  /* para que se vea bien */
+  overflow-y: auto;
+  border-left: 2px solid #830C0C;
+  /* opcional: animación extra suave */
+  transition: transform 0.3s ease;
+}
+/* Importante: Collapse ya hace la altura, pero como está fixed,
+   agregamos un efecto lateral según se* abra o cierre el panel. */
+
 .card-view {
   display: flex;
   flex-direction: column;

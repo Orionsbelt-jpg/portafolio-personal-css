@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title> Inicio </title>
 </head>
 
@@ -11,19 +12,35 @@
   <div class="grid-layout">
      <header>
      <h1 id="home"> Inicio </h1>
-          <nav>
-              <ul>
-           <li class="nav-li"><a href="index.html">Inicio</a></li>
-           <li class="nav-li"><a href="pages/biografia.html">Sobre mi</a></li>
-           <li class="nav-li"><a href="pages/proyectos.html">Proyectos</a></li> 
-           <li class="nav-li"><a href="pages/contacto.html">Contacto</a></li>
-           <li class="nav-li"><a href="pages/pasatiempos.html">Pasatiempos</a></li>
-              </ul>
-         </nav>
+<nav class="navbar navbar-expand-lg" style="background-color: #830C0C;" data-bs-theme="dark">
+  <div class="container-fluid d-flex justify-content-center">
+    <a class="navbar-brand" href="index.html"><img src="images/logo3.png" class="" alt="..."></a>
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="pages/biografia.html">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/pasatiempos.html">Pasatiempos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
        </header>
-  <main>
-    <aside class="sidebar"> lol</aside>
-     <seccion class="featured">
+   </aside>
+  <main class="featured">
        <div class="inicio-texto">
        <h2 class="cita-textual"> "No harás mucho si no eres lo suficiente valiente para intentarlo" </h2>
      <p> Principiante en desarrollo web con conocimientos básicos de HTML, CSS con habilidades en Python. </p>
@@ -32,19 +49,22 @@
        <figcaption> "Leyenda de fuerza en el diccionario." </figcaption>
      </figure>
        </div>
-     <article class="container-grid">
-      <div class="item"> 1 </div>
-      <div class="item"> 2 </div>
-      <div class="item"> 3 </div> 
-      <div class="item"> 4 </div> 
-      <div class="item"> 5 </div> 
-      <div class="item"> 6 </div> 
-      </article>
-     </seccion>
-  </main>
+<button  class="btn btn-dark float-end my-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse">
+  ☰ Menú
+</button>
+<div class="row">
+ <div style="min-height: 120px;">
+   <div class="collapse" id="menuCollapse">
+     <div class="card-link" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.
+     </div>
+   </div>
+  </div>
+</div>
     <footer>
         <p> &copy; 202X Lumi. Todos los derechos reservados. </p>
     </footer>
-  </div>
+  </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>    
 </html>
