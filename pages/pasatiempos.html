@@ -40,8 +40,7 @@
 </nav>
  </header>
 
- <main>
-  <seccion class="featured">
+ <main class="featured">
     <div class="container">
       <div class="cards-container" >
         <a class="card-link" style="color: #DAFAFB; text-decoration: none;" href="https://open.spotify.com/playlist/5gJ2b3Uep99Gel45ahkNCg?si=1699e4b7d8574d00" target="_blank">
@@ -54,8 +53,25 @@
           </a>
       </div>
     </div>
-  </seccion>
 </main>
+  <aside>
+<button class="card-link card-sm"  type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
+<p class="card-text"> ☰ Menú  </p> </button>
+<div class="row g-2 mt-2">
+ <div class="col-auto">
+  <div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
+       <div class="card-link" style="width: 300px;">
+         <figure>
+  <figcaption>MEMENTO - Japanese Baseball</figcaption>
+  <audio class="card-audio" controls src="../audio/memento.mp3"> </audio>
+</figure>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</aside>
     <footer>
         <p> &copy; 202X Lumi. Todos los derechos reservados. </p>
     </footer>

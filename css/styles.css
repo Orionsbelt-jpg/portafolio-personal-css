@@ -168,6 +168,20 @@ https://underground.kimu.moe/about */
   width: 14rem;
   height: 12rem;
 }
+
+.carousel-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#carouselExampleSlidesOnly{
+  max-width: 800px ;  
+  margin: 0 auto;     
+}
+#carouselExampleSlidesOnly .carousel-item{
+  height: 400px;     
+}
 /* ///////// /*
 
 /] estilos de pasatiempos.html */
@@ -212,9 +226,14 @@ h1{
   font-weight: 700;
   color: #E0FBFC;
 }
-/* estilo de los subtitulos */
 h2{
   font-size: 2rem;
+  font-weight: 700;
+  color: #E0FBFC;
+}
+
+h3 {
+  font-size: 1.5rem;
   font-weight: 700;
   color: #E0FBFC;
 }
@@ -275,6 +294,11 @@ li {
   gap: 1rem;
   padding: 1.25rem;
   margin: 0;
+}
+
+.card-audio {
+  display: flex;
+  width: 100%;
 }
 .proyectocard a {
   color: #DAFAFB
