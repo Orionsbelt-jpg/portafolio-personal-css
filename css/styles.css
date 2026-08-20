@@ -1,8 +1,7 @@
 /* Roboto slab font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-/* aquí agregué un estilo a la nav y utilicé margin y padding para que cubriera todo el header y no se viera tan pequeño
-solo no sé si es correcto usarlo así, pero me gustó el resultado */
+
 
 
 * {
@@ -47,9 +46,6 @@ body {
    background-attachment: fixed;
    font-family: "Roboto Slab", serif;
    background-color: #090B0A;
-}
-
-.grid-layout {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -62,9 +58,11 @@ body {
 }
 
 
+
+
 @media (min-width: 768px) {
   .grid-layout {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 280px;
   grid-template-areas: 
   "header header" 
   "featured featured"
@@ -182,9 +180,9 @@ https://underground.kimu.moe/about */
 #carouselExampleSlidesOnly .carousel-item{
   height: 400px;     
 }
-/* ///////// /*
+/* ///////// */
 
-/] estilos de pasatiempos.html */
+/* estilos de pasatiempos.html */
 
 .container {
   display: flex;
@@ -270,23 +268,7 @@ li {
   border: 0.2rem solid #830C0C;
 }
 
-.item {
-  background: #830C0C;
-  border: 2px solid #830C0C;
-  padding: 20px;
-  gap: 1rem;
-}
 
-.menu-panel{
-  width: 280px;
-  /* para que se vea bien */
-  overflow-y: auto;
-  border-left: 2px solid #830C0C;
-  /* opcional: animación extra suave */
-  transition: transform 0.3s ease;
-}
-/* Importante: Collapse ya hace la altura, pero como está fixed,
-   agregamos un efecto lateral según se* abra o cierre el panel. */
 
 .card-view {
   display: flex;
@@ -322,3 +304,59 @@ footer {
   font-size: 0.8rem;
   color: #DAFAFB;
 }
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0.75rem;
+  max-width: 26rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.contacto-form label {
+  font-size: 0.95rem;
+  color: #DAFAFB;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  background: #090B0A;
+  border: 0.15rem solid #830C0C;
+  border-radius: 0.35rem;
+  padding: 0.6rem;
+  color: #DAFAFB;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contacto-form textarea {
+  resize: vertical;
+}
+
+.contacto-form button {
+  align-self: flex-start;
+  background: #830C0C;
+  color: #DAFAFB;
+  border: none;
+  border-radius: 0.35rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contacto-form button:hover {
+  background: #E0FBFC;
+  color: #830C0C;
+}
+
+.form-disclaimer {
+  font-size: 0.85rem;
+  color: #DAFAFB;
+  background: #090B0A;
+  border: 0.15rem solid #830C0C;
+  font-style: italic;
+}
+

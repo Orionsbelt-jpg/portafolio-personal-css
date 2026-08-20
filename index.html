@@ -1,83 +1,88 @@
 <!DOCTYPE html>
-<html lang="es">    
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title> Inicio </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Inicio</title>
 </head>
 
 <body>
-  <div class="grid-layout">
-     <header>
-     <h1 id="home"> Inicio </h1>
-<nav class="navbar navbar-expand-lg" style="background-color: #830C0C;" data-bs-theme="dark">
-  <div class="container-fluid d-flex justify-content-center">
-    <a class="navbar-brand" href="index.html"><img src="images/logo3.png" class="" alt="..."></a>
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="pages/biografia.html">Sobre mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/pasatiempos.html">Pasatiempos</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-       </header>
+  <header>
+    <h1 id="home">Inicio</h1>
+    <nav class="navbar navbar-expand-lg" style="background-color: #830C0C;" data-bs-theme="dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="index.html"><img src="images/logo3.png" class="" alt="..."></a>
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="pages/biografia.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/pasatiempos.html">Pasatiempos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <main class="featured">
-       <div class="inicio-texto">
-       <h2 class="cita-textual"> "No harás mucho si no eres lo suficiente valiente para intentarlo" </h2>
-     <p> Principiante en desarrollo web con conocimientos básicos de HTML, CSS con habilidades en Python. </p>
-     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/fuerza.webp" class="d-block w-100 carousel-img" alt="strength caption on diccionary" >
+    <div class="inicio-texto">
+      <h2 class="cita-textual">"No harás mucho si no eres lo suficiente valiente para intentarlo"</h2>
+      <p>Principiante en desarrollo web con conocimientos básicos de HTML, CSS con habilidades en Python.</p>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/fuerza.webp" class="d-block w-100 carousel-img" alt="strength caption on diccionary">
+          </div>
+          <div class="carousel-item">
+            <img src="images/resiliencia.jpg" class="d-block w-100 carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/frase.jpg" class="d-block w-100 carousel-img" alt="...">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/resiliencia.jpg" class="d-block w-100 carousel-img" alt="..." >
-    </div>
-    <div class="carousel-item">
-      <img src="images/frase.jpg" class="d-block w-100 carousel-img" alt="..." >
-    </div>
-  </div>
-</div>
-  <aside>
-<button class="card-link card-sm"  type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
-<p class="card-text"> ☰ Menú  </p> </button>
-<div class="row g-2 mt-2">
- <div class="col-auto">
-  <div style="min-height: 120px;">
-    <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
-       <div class="card-link" style="width: 300px;">
-         <figure>
-  <figcaption>MEMENTO - Japanese Baseball</figcaption>
-  <audio class="card-audio" controls src="audio/memento.mp3"> </audio>
-</figure>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</aside>
-    <footer>
-        <p> &copy; 202X Lumi. Todos los derechos reservados. </p>
-    </footer>
   </main>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>    
+
+  <aside class="sidebar">
+    <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
+      <p class="card-text">☰ Menú</p>
+    </button>
+    <div class="row g-2 mt-2">
+      <div class="col-auto">
+        <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
+            <div class="card-link" style="width: 300px;">
+              <figure>
+                <figcaption>MEMENTO - Japanese Baseball</figcaption>
+                <audio class="card-audio" controls src="audio/MEMENTO.mp3"></audio>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <p>&copy; 202X Lumi. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
