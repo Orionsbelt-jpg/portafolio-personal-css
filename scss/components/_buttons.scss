@@ -1,11 +1,7 @@
 @use '../utilities/variables';
 @use '../utilities/mixins';
+@use '../utilities/placeholders';
 
-%btn-base-visual {
-  background: variables.$color-primary;
-  color: variables.$color-text;
-  align-self: flex-start;
-}
 
 .btn,
 .contacto-form button {

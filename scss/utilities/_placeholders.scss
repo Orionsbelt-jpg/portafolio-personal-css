@@ -1,0 +1,7 @@
+@use 'variables';
+
+%btn-base-visual {
+  background: variables.$color-primary;
+  color: variables.$color-text;
+  align-self: flex-start;
+}
