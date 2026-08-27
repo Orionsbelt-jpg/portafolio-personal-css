@@ -8,14 +8,17 @@
   gap: 1rem;
   color: v.$color-text;
   text-decoration: none;
-  transition: border-color v.$transition-base;
+  transition: border-color v.$transition-base, transform v.$transition-base;
   opacity: 80%;
   &:hover {
     border-color: v.$color-heading;
+    transform: translateY(-4px);
     opacity: 100%
   }
 }
- 
+
+
+
 .card-text {
   color: v.$color-text;
 }
@@ -38,18 +41,22 @@
   max-width: 300px;
 }
  
+
+ 
 .proyectocard {
   @include m.card-box($padding: 1.25rem, $radius: v.$radius-md);
+  padding: 1.25rem;
+  border-radius: v.$radius-md;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;  // mobile: 1 columna
   gap: 1rem;
   align-self: flex-start;
- 
+  width: 100%;
+  box-sizing: border-box;
+
   @include m.breakpoint-up(v.$bp-md) {
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 20rem 1fr;  // desktop: imagen + texto
   }
- 
-  a {
-    color: v.$color-text;
-  }
+
+  a { color: v.$color-text; }
 }

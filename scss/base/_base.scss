@@ -1,6 +1,8 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins' as m;
  
+
+
 // ----- Reset -----
 * {
   margin: 0;
@@ -47,7 +49,22 @@ main {
     position: relative;
   }
 }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+main {
+  animation: fadeUp 0.6s ease 0.2s forwards;
+  opacity: 0;
+  // ... resto de tus estilos de main
+}
 .featured  { padding: 1rem; }
 
 .sidebar   {
@@ -76,7 +93,13 @@ main {
   max-width: 800px;
   margin: 0 auto;
  
-  .carousel-item { height: 400px; }
+  .carousel-item {
+  height: 220px;  // mobile
+
+  @include m.breakpoint-up(v.$bp-md) {
+    height: 400px;  // desktop
+  }
+}
 }
  
 .carousel-img {
@@ -88,6 +111,7 @@ main {
 // ----- Menú lateral (aside colapsable) -----
 .menu-space { min-height: 120px; }
  
+
 // ----- Biografía -----
 .biografia-container {
   min-height: 30rem;
@@ -159,10 +183,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2rem;
   list-style: none;
+  padding: 0.5rem;  // menos padding en mobile
+
+  @include m.breakpoint-up(v.$bp-md) {
+    padding: 2rem;  // el padding original solo en desktop
+  }
 }
- 
 .proyecto-view {
   display: flex;
   justify-content: center;

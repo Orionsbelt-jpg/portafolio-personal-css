@@ -1,15 +1,22 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins' as m;
- 
-.btn,
-.contacto-form button {
-  @include m.btn-base;
-  align-self: flex-start;
+
+%btn-base-visual {
   background: v.$color-primary;
   color: v.$color-text;
+  align-self: flex-start;
+}
+
+.btn,
+.contacto-form button {
+  @extend %btn-base-visual;
+  @include m.btn-base;
  
   &:hover {
     background: v.$color-heading;
     color: v.$color-primary;
   }
 }
+
+
+
