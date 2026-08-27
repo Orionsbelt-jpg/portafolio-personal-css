@@ -3,36 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactá a Lumi por GitHub o Discord. También podés enviar un mensaje directo desde el formulario de contacto de su portafolio.">
+  <meta name="keywords" content="contacto, Lumi, Leonel, GitHub, Discord, desarrollador web, portafolio">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="../css/styles.css">
 
-  <title>Contacto</title>
+  <title>Contacto | Portafolio de Lumi</title>
 </head>
 <body>
 
   <header>
-    <h1 id="contacto">Contacto</h1>
+    <h1>Contacto</h1>
 
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid d-flex justify-content-center">
         <a class="navbar-brand" href="../index.html">
-          <img src="../images/logo3.png" alt="Logo del portafolio">
+          <img src="../images/logo3.png" alt="Ir al inicio del portafolio de Lumi">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="biografia.html">Sobre mi</a>
+              <a class="nav-link" href="biografia.html">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="proyectos.html">Proyectos</a>
@@ -50,50 +52,42 @@
   </header>
 
   <main>
-    <div class="featured">
-      <div class="contacto-texto">
-        <h2>Puedes contactarme por:</h2>
-        <ul>
-          <li class="nav-li"><a href="https://github.com/Orionsbelt-jpg" target="_blank">Github</a></li>
-          <li class="nav-li">Discord: 0rionsbelt_</li>
-        </ul>
+    <section class="contacto-texto" aria-label="Información de contacto">
+      <h2>Podés contactarme por:</h2>
+      <ul>
+        <li class="nav-li">
+          <a href="https://github.com/Orionsbelt-jpg" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+        <li class="nav-li">Discord: 0rionsbelt_</li>
+      </ul>
 
-        <form class="contacto-form">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      <form class="contacto-form" aria-label="Formulario de contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
 
-          <button type="submit">Enviar</button>
-          <p class="form-disclaimer">Formulario de demostración — para escribirme de verdad, usá GitHub o Discord de arriba. ↑</p>
-        </form>
-      </div>
-    </div>
+        <button type="submit">Enviar</button>
+        <p class="form-disclaimer">Formulario de demostración — para escribirme de verdad, usá GitHub o Discord de arriba. ↑</p>
+      </form>
+    </section>
 
-    <aside class="sidebar">
-      <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
-        <p class="card-text">☰ Menú</p>
-      </button>
+<aside class="sidebar">
+  <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse" aria-label="Abrir reproductor de música">
+    <p class="card-text">☰ Menú</p>
+  </button>
 
-      <div class="row g-2 mt-2">
-        <div class="col-auto">
-          <div class="menu-space">
-            <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
-              <div class="card-link audio-widget">
-                <figure>
-                  <figcaption>MEMENTO - Japanese Baseball</figcaption>
-                  <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
+  <div class="collapse" id="menuCollapse">
+    <figure class="card-link audio-widget">
+      <figcaption>MEMENTO - Japanese Baseball</figcaption>
+      <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
+    </figure>
+  </div>
+</aside>
   </main>
 
   <footer>

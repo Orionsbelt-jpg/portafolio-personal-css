@@ -1,0 +1,50 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+// ----- Contacto -----
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 26rem;
+  margin: 1.5rem auto 0;
+  text-align: left;
+
+ 
+  label {
+    font-size: 0.95rem;
+    color: variables.$color-text;
+  }
+ 
+  input,
+  textarea {
+    background: variables.$color-bg;
+    border: variables.$border-width-sm solid variables.$color-primary;
+    border-radius: variables.$radius-sm;
+    padding: 0.6rem;
+    color: variables.$color-text;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+ 
+  textarea { resize: vertical; }
+}
+
+.contacto-texto {
+  ul {
+    list-style: none;
+  padding-left: 0;
+  }
+  a {
+      color: variables.$color-text;
+      text-decoration: underline;    
+  }
+}
+
+.form-disclaimer {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: variables.$color-text;
+  background: variables.$color-bg;
+  border: variables.$border-width-sm solid variables.$color-primary;
+}

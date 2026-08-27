@@ -4,6 +4,11 @@
 @use 'layout/header';
 @use 'layout/nav';
 @use 'layout/footer';
+@use 'layout/main';
  
 @use 'components/buttons';
 @use 'components/cards';
+@use 'components/inicio';
+@use 'components/forms';
+@use 'components/biografia';
+@use 'components/proyectos';

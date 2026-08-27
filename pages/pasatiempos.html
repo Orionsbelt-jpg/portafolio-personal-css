@@ -3,36 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conocé los hobbies de Lumi: música en Spotify, videos en YouTube, fotos en Instagram y videojuegos en Steam. Guitarra, dibujo y programación.">
+  <meta name="keywords" content="pasatiempos, hobbies, música, guitarra, dibujo, videojuegos, CS2, Steam, Spotify, YouTube, Lumi">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="../css/styles.css">
 
-  <title>Pasatiempos</title>
+  <title>Pasatiempos | Portafolio de Lumi</title>
 </head>
 <body>
 
   <header>
-    <h1 id="pasatiempos">Pasatiempos</h1>
+    <h1>Pasatiempos</h1>
 
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid d-flex justify-content-center">
         <a class="navbar-brand" href="../index.html">
-          <img src="../images/logo3.png" alt="Logo del portafolio">
+          <img src="../images/logo3.png" alt="Ir al inicio del portafolio de Lumi">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="biografia.html">Sobre mi</a>
+              <a class="nav-link" href="biografia.html">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="proyectos.html">Proyectos</a>
@@ -50,52 +52,42 @@
   </header>
 
   <main>
-    <div class="featured">
-      <div class="container">
-        <div class="cards-container">
-          <a class="card-link" href="https://open.spotify.com/playlist/5gJ2b3Uep99Gel45ahkNCg?si=1699e4b7d8574d00" target="_blank">
-            <h2 class="card-text">Musica</h2>
-            <p class="card-text">Me gusta escuchar musica mientras codeo o dibujo, aunque a veces me distraigo y termino escuchando musica por horas.</p>
-          </a>
+    <section aria-label="Listado de pasatiempos">
+      <div class="cards-container" data-aos="fade-up" data-aos-anchor-placemente="top-center">
+        <a class="card-link" href="https://open.spotify.com/playlist/5gJ2b3Uep99Gel45ahkNCg?si=1699e4b7d8574d00" target="_blank" rel="noopener noreferrer">
+          <h2 class="card-text">Música</h2>
+          <p class="card-text">Me gusta escuchar música mientras codeo o dibujo, aunque a veces me distraigo y termino escuchando música por horas.</p>
+        </a>
 
-          <a class="card-link" href="https://www.youtube.com/@Lumiz-" target="_blank">
-            <h2 class="card-text">Youtube</h2>
-            <p class="card-text">Cada cierto tiempo, me dedico a editar alguno que otro video de mi interés en algún tema.</p>
-          </a>
+        <a class="card-link" href="https://www.youtube.com/@Lumiz-" target="_blank" rel="noopener noreferrer">
+          <h2 class="card-text">YouTube</h2>
+          <p class="card-text">Cada cierto tiempo, me dedico a editar alguno que otro video de mi interés en algún tema.</p>
+        </a>
 
-          <a class="card-link" href="https://instagram.com/leoo.rhh" target="_blank">
-            <h2 class="card-text">Instagram</h2>
-            <p class="card-text">Suelo sacar fotos de lugares que me gustan, y de vez en cuando subo también algún video tocando guitarra.</p>
-          </a>
+        <a class="card-link" href="https://instagram.com/leoo.rhh" target="_blank" rel="noopener noreferrer">
+          <h2 class="card-text">Instagram</h2>
+          <p class="card-text">Suelo sacar fotos de lugares que me gustan, y de vez en cuando subo también algún video tocando guitarra.</p>
+        </a>
 
-          <a class="card-link" href="https://steamcommunity.com/id/0rionsbelt-jpg/" target="_blank">
-            <h2 class="card-text">Steam</h2>
-            <p class="card-text">Ahí podés ver a qué juego cuando tengo tiempo libre, CS2 es el que más cae.</p>
-          </a>
-        </div>
+        <a class="card-link" href="https://steamcommunity.com/id/0rionsbelt-jpg/" target="_blank" rel="noopener noreferrer">
+          <h2 class="card-text">Steam</h2>
+          <p class="card-text">Ahí podés ver a qué juego cuando tengo tiempo libre, CS2 es el que más cae.</p>
+        </a>
       </div>
-    </div>
+    </section>
 
-    <aside class="sidebar">
-      <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
-        <p class="card-text">☰ Menú</p>
-      </button>
+<aside class="sidebar">
+  <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse" aria-label="Abrir reproductor de música">
+    <p class="card-text">☰ Menú</p>
+  </button>
 
-      <div class="row g-2 mt-2">
-        <div class="col-auto">
-          <div class="menu-space">
-            <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
-              <div class="card-link audio-widget">
-                <figure>
-                  <figcaption>MEMENTO - Japanese Baseball</figcaption>
-                  <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
+  <div class="collapse" id="menuCollapse">
+    <figure class="card-link audio-widget">
+      <figcaption>MEMENTO - Japanese Baseball</figcaption>
+      <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
+    </figure>
+  </div>
+</aside>
   </main>
 
   <footer>

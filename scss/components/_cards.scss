@@ -1,17 +1,17 @@
-@use '../utilities/variables' as v;
-@use '../utilities/mixins' as m;
+@use '../utilities/variables';
+@use '../utilities/mixins';
  
 .card-link {
-  @include m.card-box($padding: 1.25rem);
+  @include mixins.card-box($padding: 1.25rem);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: v.$color-text;
+  color: variables.$color-text;
   text-decoration: none;
-  transition: border-color v.$transition-base, transform v.$transition-base;
+  transition: border-color variables.$transition-base, transform variables.$transition-base;
   opacity: 80%;
   &:hover {
-    border-color: v.$color-heading;
+    border-color: variables.$color-heading;
     transform: translateY(-4px);
     opacity: 100%
   }
@@ -20,7 +20,7 @@
 
 
 .card-text {
-  color: v.$color-text;
+  color: variables.$color-text;
 }
  
 .card-view {
@@ -42,11 +42,12 @@
 }
  
 
+.menu-space { min-height: 120px; }
  
 .proyectocard {
-  @include m.card-box($padding: 1.25rem, $radius: v.$radius-md);
+  @include mixins.card-box($padding: 1.25rem, $radius: variables.$radius-md);
   padding: 1.25rem;
-  border-radius: v.$radius-md;
+  border-radius: variables.$radius-md;
   display: grid;
   grid-template-columns: 1fr;  // mobile: 1 columna
   gap: 1rem;
@@ -54,9 +55,17 @@
   width: 100%;
   box-sizing: border-box;
 
-  @include m.breakpoint-up(v.$bp-md) {
+  @include mixins.breakpoint-up(variables.$bp-md) {
     grid-template-columns: 20rem 1fr;  // desktop: imagen + texto
   }
 
-  a { color: v.$color-text; }
+  a { color: variables.$color-text; }
+}
+
+// ----- Pasatiempos ----- 
+.container     { @include mixins.flex($direction: column, $gap: 1.5rem); }
+ 
+.cards-container {
+  @include mixins.grid-cols(1, 1.5rem);
+  @include mixins.breakpoint-up(variables.$bp-md) { @include mixins.grid-cols(3, 1.5rem); }
 }

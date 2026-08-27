@@ -3,36 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos de desarrollo web de Lumi. Incluye Rock-1980, una aplicación web con Django que implementa CRUD, búsqueda y autenticación de usuarios.">
+  <meta name="keywords" content="proyectos, desarrollo web, Django, Python, CRUD, Rock-1980, portafolio, Lumi, programación">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="../css/styles.css">
 
-  <title>Proyectos</title>
+  <title>Proyectos | Portafolio de Lumi</title>
 </head>
 <body>
 
   <header>
-    <h1 id="proyectos">Proyectos</h1>
+    <h1>Proyectos</h1>
 
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid d-flex justify-content-center">
         <a class="navbar-brand" href="../index.html">
-          <img src="../images/logo3.png" alt="Logo del portafolio">
+          <img src="../images/logo3.png" alt="Ir al inicio del portafolio de Lumi">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="biografia.html">Sobre mi</a>
+              <a class="nav-link" href="biografia.html">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="proyectos.html">Proyectos</a>
@@ -50,40 +52,36 @@
   </header>
 
   <main>
-    <div class="featured">
+    <section aria-label="Listado de proyectos">
       <ul class="proyectos-lista">
         <li class="proyectocard">
           <div class="card-view">
-            <img src="../images/django.png" class="picture" alt="django logo">
+            <img src="../images/django.png" class="picture" alt="Logo de Django, framework de Python usado en el proyecto Rock-1980">
           </div>
-
-          <a href="https://github.com/Orionsbelt-jpg/rock-1980" target="_blank">
-            <p class="card-text">Rock-1980: aplicación web desarrollada en Django. Incluye un sistema CRUD completo para gestionar el contenido, sistema de búsqueda y autenticación de usuarios. La parte que más trabajo me llevó (y de la que más aprendí) fue el CRUD: entender bien cómo estructurar los modelos y manejar la base de datos para que las operaciones de crear, leer, actualizar y borrar funcionaran de forma prolija y sin romper nada.</p>
-          </a>
+           <article>
+              <h2>Rock-1980</h2>
+              <p class="card-text">
+                Aplicación web desarrollada en Django. Incluye un sistema CRUD completo para gestionar el contenido, sistema de búsqueda y autenticación de usuarios. 
+                La parte que más trabajo me llevó (y de la que más aprendí) fue el CRUD: entender bien cómo estructurar los modelos y manejar la base de datos para que las operaciones de crear, leer, actualizar y borrar funcionaran de forma prolija y sin romper nada.
+              </p>
+              <a href="https://github.com/Orionsbelt-jpg/rock-1980"> Ver proyecto en GitHub </a>
+          </article>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <aside class="sidebar">
-      <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
-        <p class="card-text">☰ Menú</p>
-      </button>
+<aside class="sidebar">
+  <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse" aria-label="Abrir reproductor de música">
+    <p class="card-text">☰ Menú</p>
+  </button>
 
-      <div class="row g-2 mt-2">
-        <div class="col-auto">
-          <div class="menu-space">
-            <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
-              <div class="card-link audio-widget">
-                <figure>
-                  <figcaption>MEMENTO - Japanese Baseball</figcaption>
-                  <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
+  <div class="collapse" id="menuCollapse">
+    <figure class="card-link audio-widget">
+      <figcaption>MEMENTO - Japanese Baseball</figcaption>
+      <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
+    </figure>
+  </div>
+</aside>
   </main>
 
   <footer>

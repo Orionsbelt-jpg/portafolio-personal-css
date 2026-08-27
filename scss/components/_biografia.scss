@@ -1,0 +1,61 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+// ----- Biografía -----
+.biografia-container {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  border: variables.$border-width solid variables.$color-primary;
+  background: variables.$color-bg;
+
+  @include mixins.breakpoint-up(variables.$bp-md) { flex-direction: row; }
+}
+
+.biografia-view {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+  border-bottom: variables.$border-width solid variables.$color-primary;
+
+  @include mixins.breakpoint-up(variables.$bp-md) {
+    width: 15rem;
+    border-right: variables.$border-width solid variables.$color-primary;
+    border-bottom: none;
+  }
+}
+ 
+.biografia-info  { display: flex; gap: 1rem; }
+ 
+.biografia-separador {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+}
+ 
+.biografia-foto {
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+}
+ 
+.biografia-texto {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1.5rem;
+ 
+  .parrafo {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+ 
+.parrafo  { font-size: 1.15rem; }
+.picture  { width: 14rem; height: 12rem; }
+ 

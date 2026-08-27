@@ -1,12 +1,8 @@
-@use '../utilities/variables' as v;
+@use '../utilities/variables';
 
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0);}
-}
 
 header {
   padding: 20px;
-  background-color: v.$color-primary;
+  background-color: variables.$color-primary;
   animation: fadeDown 0.3s ease forwards;
 }

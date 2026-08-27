@@ -1,0 +1,19 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+// ----- Proyectos -----
+.proyectos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0.5rem;  // menos padding en mobile
+
+  @include mixins.breakpoint-up(variables.$bp-md) {
+    padding: 2rem;  // el padding original solo en desktop
+  }
+}
+.proyecto-view {
+  display: flex;
+  justify-content: center;
+}

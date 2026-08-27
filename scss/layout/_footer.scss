@@ -1,8 +1,7 @@
-@use '../utilities/variables' as v;
+@use '../utilities/variables';
 
 footer {
   text-align: center;
   font-size: 0.8rem;
-  color: v.$color-text;
+  color: variables.$color-text;
 }
- 

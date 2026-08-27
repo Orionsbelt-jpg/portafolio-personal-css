@@ -1,0 +1,34 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+// ----- Inicio -----
+.inicio-texto,
+.contacto-texto {
+  @include mixins.flex($direction: column, $gap: 1.5rem);
+  padding: 20px;
+}
+ 
+.container-grid {
+  @include mixins.grid-cols(1, 10px);
+  @include mixins.breakpoint-up(variables.$bp-md) { @include mixins.grid-cols(3, 10px); }
+}
+
+// ----- Carrusel -----
+#carouselExampleSlidesOnly {
+  max-width: 800px;
+  margin: 0 auto;
+ 
+  .carousel-item {
+  height: 220px;  // mobile
+
+  @include mixins.breakpoint-up(variables.$bp-md) {
+    height: 400px;  // desktop
+  }
+}
+}
+ 
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
