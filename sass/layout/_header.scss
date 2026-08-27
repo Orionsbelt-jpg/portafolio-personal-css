@@ -1,0 +1,6 @@
+@use '../utilities/variables' as v;
+ 
+header {
+  padding: 20px;
+  background-color: v.$color-primary;
+}

@@ -1,0 +1,11 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+ 
+h1 { @include m.heading(2.5rem); }
+h2 { @include m.heading(2rem); }
+h3 { @include m.heading(1.5rem); }
+ 
+p {
+  font-size: 1.25rem;
+  color: v.$color-text;
+}

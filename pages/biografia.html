@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css">
+
   <title>Sobre Mi</title>
 </head>
-
 <body>
+
   <header>
     <h1 id="biografia">Sobre Mi</h1>
-    <nav class="navbar navbar-expand-lg" style="background-color: #830C0C;" data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid d-flex justify-content-center">
-        <a class="navbar-brand" href="../index.html"><img src="../images/logo3.png" class="" alt="..."></a>
-        <button class="navbar-toggler" type="button"
-          data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo3.png" alt="Logo del portafolio">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
@@ -39,65 +48,71 @@
     </nav>
   </header>
 
-  <main class="featured">
-    <div class="biografia-container">
-      <div class="biografia-info"></div>
-      <div class="biografia-view">
-        <div class="biografia-foto">
-          <img src="../images/dog.jpg" class="picture" alt="emo dog">
+  <main>
+    <div class="featured">
+      <div class="biografia-container">
+        <div class="biografia-info"></div>
+
+        <div class="biografia-view">
+          <div class="biografia-foto">
+            <img src="../images/dog.jpg" class="picture" alt="emo dog">
+          </div>
+
+          <div class="biografia-card">
+            <span class="biografia-separador">
+              <p>Nombre</p> <p>:</p> <p>Lumi</p>
+            </span>
+            <span class="biografia-separador">
+              <p>Edad</p> <p>:</p> <p>18 años</p>
+            </span>
+            <span class="biografia-separador">
+              <p>Juego</p> <p>:</p> <p>CS2</p>
+            </span>
+          </div>
         </div>
-        <div class="biografia-card">
-          <span class="biografia-separador">
-            <p>Nombre</p> <p>:</p> <p>Lumi</p>
-          </span>
-          <span class="biografia-separador">
-            <p>Edad</p> <p>:</p> <p>18 años</p>
-          </span>
-          <span class="biografia-separador">
-            <p>Juego</p> <p>:</p> <p>CS2</p>
-          </span>
+
+        <div class="biografia-texto">
+          <h2>Presentacion</h2>
+          <p class="parrafo">
+            ¡Hola! Me llamo Leonel, aunque voy con el tag de "Lumi" para mayor comodidad. Soy un chico de 18 años estudiante que le gustan los juegos y codear cosas.
+          </p>
+          <p class="parrafo">
+            Desde siempre he tenido curiosidad por las pantallas y por la música pesada a volumen alto, al punto de que me quede sin timpanos...
+          </p>
+          <p class="parrafo">
+            Aunque mi gusto por las computadoras, viene mas que todo, por los videojuegos.
+            Aunque últimamente veo mas código, lo cual se me hace divertido pero en algunos casos.. frustrante.
+          </p>
+          <p class="parrafo">
+            Y por último pero no menos importante, el dibujo. Siempre me ha gustado desde pequeño intentar colorear cosas las cuales durante un buen tiempo..
+            no me lo tomé tan enserio, debido a que mis dotes artísticos no eran los mejores y creía que nunca llegaría a cierto nivel,
+            hasta que en mi último año decidí retomarlo como un pasatiempo y al día de hoy es otro de mis hobbies, junto a mi guitarra eléctrica y la programación.
+          </p>
         </div>
-      </div>
-      <div class="biografia-texto">
-        <h2>Presentacion</h2>
-        <p class="parrafo">
-          ¡Hola! Me llamo Leonel, aunque voy con el tag de "Lumi" para mayor comodidad. Soy un chico de 18 años estudiante que le gustan los juegos y codear cosas.
-        </p>
-        <p class="parrafo">
-          Desde siempre he tenido curiosidad por las pantallas y por la música pesada a volumen alto, al punto de que me quede sin timpanos...
-        </p>
-        <p class="parrafo">
-          Aunque mi gusto por las computadoras, viene mas que todo, por los videojuegos.
-          Aunque últimamente veo mas código, lo cual se me hace divertido pero en algunos casos.. frustrante.
-        </p>
-        <p class="parrafo">
-          Y por último pero no menos importante, el dibujo. Siempre me ha gustado desde pequeño intentar colorear cosas las cuales durante un buen tiempo..
-          no me lo tomé tan enserio, debido a que mis dotes artísticos no eran los mejores y creía que nunca llegaría a cierto nivel,
-          hasta que en mi último año decidí retomarlo como un pasatiempo y al día de hoy es otro de mis hobbies, junto a mi guitarra eléctrica y la programación.
-        </p>
       </div>
     </div>
-  </main>
 
-  <aside class="sidebar">
-    <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
-      <p class="card-text">☰ Menú</p>
-    </button>
-    <div class="row g-2 mt-2">
-      <div class="col-auto">
-        <div style="min-height: 120px;">
-          <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
-            <div class="card-link audio-widget">
-              <figure>
-                <figcaption>MEMENTO - Japanese Baseball</figcaption>
-                <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
-              </figure>
+    <aside class="sidebar">
+      <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
+        <p class="card-text">☰ Menú</p>
+      </button>
+
+      <div class="row g-2 mt-2">
+        <div class="col-auto">
+          <div class="menu-space">
+            <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
+              <div class="card-link audio-widget">
+                <figure>
+                  <figcaption>MEMENTO - Japanese Baseball</figcaption>
+                  <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </aside>
+    </aside>
+  </main>
 
   <footer>
     <p>&copy; 202X Lumi. Todos los derechos reservados.</p>

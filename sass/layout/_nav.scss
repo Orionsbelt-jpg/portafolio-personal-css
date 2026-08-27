@@ -1,0 +1,27 @@
+@use '../utilities/variables' as v;
+ 
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+  }
+ 
+  .nav-li {
+    list-style: none;
+ 
+    a {
+      color: v.$color-text;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+ 
+      &:hover {
+        color: v.$color-heading;
+      }
+    }
+  }
+}
+
+   

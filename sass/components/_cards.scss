@@ -1,0 +1,55 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+ 
+.card-link {
+  @include m.card-box($padding: 1.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: v.$color-text;
+  text-decoration: none;
+  transition: border-color v.$transition-base;
+  opacity: 80%;
+  &:hover {
+    border-color: v.$color-heading;
+    opacity: 100%
+  }
+}
+ 
+.card-text {
+  color: v.$color-text;
+}
+ 
+.card-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  margin: 0;
+}
+ 
+.card-audio {
+  display: flex;
+  width: 100%;
+}
+ 
+.audio-widget {
+  width: 100%;
+  max-width: 300px;
+}
+ 
+.proyectocard {
+  @include m.card-box($padding: 1.25rem, $radius: v.$radius-md);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-self: flex-start;
+ 
+  @include m.breakpoint-up(v.$bp-md) {
+    grid-template-columns: 20rem 1fr;
+  }
+ 
+  a {
+    color: v.$color-text;
+  }
+}

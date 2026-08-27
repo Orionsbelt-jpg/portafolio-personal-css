@@ -1,86 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">    
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto</title>
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <title>Contacto</title>
+</head>
 <body>
+
   <header>
-    <h1 id="contacto"> Contacto </h1>
- <nav class="navbar navbar-expand-lg" style="background-color: #830C0C;" data-bs-theme="dark">
-  <div class="container-fluid d-flex justify-content-center">
-    <a class="navbar-brand" href="../index.html"><img src="../images/logo3.png" class="" alt="..."></a>
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="biografia.html">Sobre mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="proyectos.html">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pasatiempos.html">Pasatiempos</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
- </header>
+    <h1 id="contacto">Contacto</h1>
 
- <main class="featured">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo3.png" alt="Logo del portafolio">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="biografia.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pasatiempos.html">Pasatiempos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="featured">
       <div class="contacto-texto">
-        <h2> Puedes contactarme por: </h2>
+        <h2>Puedes contactarme por:</h2>
         <ul>
-          <li class="nav-li"> <a href="https://github.com/Orionsbelt-jpg" target="_blank">Github</a> </li>
-          <li class="nav-li"> Discord: 0rionsbelt_ </li>  
+          <li class="nav-li"><a href="https://github.com/Orionsbelt-jpg" target="_blank">Github</a></li>
+          <li class="nav-li">Discord: 0rionsbelt_</li>
         </ul>
-<form class="contacto-form">
-  <label for="nombre">Nombre</label>
-  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        <form class="contacto-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-  <label for="mensaje">Mensaje</label>
-  <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
 
-  <button type="submit">Enviar</button>
-  <p class="form-disclaimer">Formulario de demostración — para escribirme de verdad, usá GitHub o Discord de arriba. ↑</p>
-</form>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+
+          <button type="submit">Enviar</button>
+          <p class="form-disclaimer">Formulario de demostración — para escribirme de verdad, usá GitHub o Discord de arriba. ↑</p>
+        </form>
+      </div>
     </div>
- </main>   
-   <aside class="sidebar">
-<button class="card-link card-sm"  type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
-<p class="card-text"> ☰ Menú  </p> </button>
-<div class="row g-2 mt-2">
- <div class="col-auto">
-  <div style="min-height: 120px;">
-    <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
-       <div class="card-link audio-widget">
-         <figure>
-  <figcaption>MEMENTO - Japanese Baseball</figcaption>
-  <audio class="card-audio" controls src="../audio/MEMENTO.mp3"> </audio>
-</figure>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</aside>
-    <footer>
-        <p> &copy; 202X Lumi. Todos los derechos reservados. </p>
-    </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <aside class="sidebar">
+      <button class="card-link card-sm" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="menuCollapse menuCollapse2">
+        <p class="card-text">☰ Menú</p>
+      </button>
+
+      <div class="row g-2 mt-2">
+        <div class="col-auto">
+          <div class="menu-space">
+            <div class="collapse collapse-horizontal multi-collapse" id="menuCollapse">
+              <div class="card-link audio-widget">
+                <figure>
+                  <figcaption>MEMENTO - Japanese Baseball</figcaption>
+                  <audio class="card-audio" controls src="../audio/MEMENTO.mp3"></audio>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 202X Lumi. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
